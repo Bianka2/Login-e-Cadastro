@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h1 id="cadastro">Cadastro</h1>
+            <p>Nome:</p>
+            <p> <input type="text"></p>
+            <p>Email:</p>
+            <p><input type="email" name="email" id="email" placeholder="exemplo@email.com"></p>
+            <p>Senha:</p>
+            <input type="password" name="senha" id="senha">
+            <p>Celular:</p>
+            <input type="tel" name="celular" id="celular" placeholder="(DDD) 00000-0000">
+            <p>Data Nascimento</p>
+            <p><input type="date" name="nasc" id="nasc"></p>
+            <p>Sexo:
+                <p>
+                    <input type="radio" name="sex" id="sexf" checked>
+                    <label for="sexf">Feminino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sex" id="sexm">
+                    <label for="sexm">Masculino</label> 
+                </p>
+            </p>
+            <p>Estado:
+                <select name="seletor" id="seletor">
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="ES">ES</option>
+                    <option value="PR">PR</option>
+                    <option value="MG">MG</option>
+                    <option value="BA">BA</option>
+                    <option value="SC">SC</option>
+                </select>
+            </p>
+            <input type="button" value="Cadastrar">
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>&copy; Bianka Almeida</p>
+        <a href="https://linkedin.com/in/bianka-almeida/" target="_blank">Linkedln</a>
+    </footer>

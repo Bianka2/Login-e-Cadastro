@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(71, 142, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#cadastro {
+    font-size: 40px;
+    text-align: center;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 1000px;
+    font-size: 15px;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 1px;
+    background-color: rgb(106, 163, 237);
+}
+
+nav#menu li:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+
+section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.386);
+    margin-top: 60px;
+}
+
+footer#rodape {
+    color: white;
+    font-style: italic;
+    clear: both;
+}
