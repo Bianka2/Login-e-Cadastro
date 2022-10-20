@@ -19,41 +19,40 @@
     <section>
         <div>
             <h1 id="cadastro">Cadastro</h1>
-            <p>Nome:</p>
-            <p> <input type="text"></p>
-            <p>Email:</p>
-            <p><input type="email" name="email" id="email" placeholder="exemplo@email.com"></p>
-            <p>Senha:</p>
-            <input type="password" name="senha" id="senha">
-            <p>Celular:</p>
-            <input type="tel" name="celular" id="celular" placeholder="(DDD) 00000-0000">
-            <p>Data Nascimento</p>
-            <p><input type="date" name="nasc" id="nasc"></p>
-            <p>Sexo:
-                <p>
-                    <input type="radio" name="sex" id="sexf" checked>
-                    <label for="sexf">Feminino</label>
+            <div class="formulario">
+                <p>Nome:<br><input type="text" id="nome" placeholder="nome" size="30"></p>
+                <p>Email:<br><input type="email" name="email" id="email" placeholder="exemplo@email.com" size="30"></p>
+                <p>Senha:<br><input type="password" name="senha" id="senha" placeholder="senha" size="20"></p>
+                <p>Celular:<br><input type="tel" name="celular" id="cel" placeholder="(DDD) 00000-0000" size="15"></p>
+                <p>Nascimento:<br><input type="date" name="nasc" id="nasc"></p>
+                <p>Sexo:
+                        <input type="radio" name="sex" id="sexf" checked>
+                        <label for="sexf">Feminino</label>
+                        <input type="radio" name="sex" id="sexm">
+                        <label for="sexm">Masculino</label>
                 </p>
-                <p>
-                    <input type="radio" name="sex" id="sexm">
-                    <label for="sexm">Masculino</label> 
+                <p>Estado:
+                    <select name="seletor" id="seletor">
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                        <option value="ES">ES</option>
+                        <option value="BA">BA</option>
+                        <option value="MG">MG</option>
+                        <option value="PR">PR</option>
+                        <option value="SC">SC</option>
+                    </select>
                 </p>
-            </p>
-            <p>Estado:
-                <select name="seletor" id="seletor">
-                    <option value="SP">SP</option>
-                    <option value="RJ">RJ</option>
-                    <option value="ES">ES</option>
-                    <option value="PR">PR</option>
-                    <option value="MG">MG</option>
-                    <option value="BA">BA</option>
-                    <option value="SC">SC</option>
-                </select>
-            </p>
-            <input type="button" value="Cadastrar">
+            </div>
+            <div class="botao-cadastro">
+                <input type="button" value="Cadastrar" id="botao" onclick="botao()">
+            </div>
         </div>
     </section>
     <footer id="rodape">
         <p>&copy; Bianka Almeida</p>
-        <a href="https://linkedin.com/in/bianka-almeida/" target="_blank">Linkedln</a>
+        <a href="https://linkedin.com/in/bianka-almeida/" target="_blank"><img src="imagens/linkedin.png" alt="icone linkedin"></a>
     </footer>
+    <script type="text/javascript" src="cadastro.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(71, 142, 222);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a5b1c2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
     font-size: 20px;
-    margin-bottom: 1%;
+    margin-bottom: 0%;
 }
 
 a {
@@ -20,6 +20,10 @@ a:hover {
 #cadastro {
     font-size: 40px;
     text-align: center;
+}
+
+input {
+    height: 25px;
 }
 
 nav#menu {
@@ -39,19 +43,57 @@ nav#menu li {
     display: inline-block;
     padding: 10px;
     margin: 1px;
-    background-color: rgb(106, 163, 237);
+    background-color: #0652DD;
 }
 
 nav#menu li:hover {
-    background-color: rgb(40, 40, 40);
+    background-color: #70a1ff;
 }
 
+select {
+    margin-top: 15px;
+}
+
+#botao {
+    color: white;
+    font-size: 20px;
+    background-color: #0652DD;
+    border-radius: 5%;
+    border: none;
+    height: 45px;
+    width: 20%;
+}
+
+#botao:hover {
+    background-color: #70a1ff;
+}
+
+.formulario {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.formulario p {
+    margin-left: 30px;
+}
+
+.botao-cadastro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 section {
     background-color: white;
-    border-radius: 20px;
-    padding: 15px;
-    width: 500px;
+    padding: 30px;
+    width: 600px;
     margin: auto;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.386);
     margin-top: 60px;
@@ -61,4 +103,9 @@ footer#rodape {
     color: white;
     font-style: italic;
     clear: both;
+    text-align: center;
+}
+
+img {
+    padding: 10px;
 }

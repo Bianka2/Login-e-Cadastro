@@ -12,22 +12,29 @@
         <nav id="menu">
             <ul>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Formulário</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
     <section>
         <div>
             <h1 id="login">Login</h1>
-            <p>Nome: <input type="text" id="txtn"></p>
-            <p>Email: <input type="email" name="txte" id="txte" placeholder="exemplo@email.com"></p>
-            <p>Senha: <input type="password" name="senha" id="senha"></p>
-            <p><input type="button" value="Entrar"></p>
+            <div class="painel-login">
+                <p>Nome: <br><input type="text" id="nome" placeholder="nome" size="25"></p>
+                <p>Sobrenome: <br><input type="text" id="sobrenome" placeholder="sobrenome" size="25"></p>
+                <p>Email: <br><input type="email" name="email" id="email" placeholder="exemplo@email.com" size="25"></p>
+                <p>Senha: <br><input type="password" name="senha" id="senha" placeholder="senha" size="25"></p>
+            </div>
+            <div class="botao-login">
+                <input type="button" value="Logar" id="botao" onclick="botao()">
+            </div>
         </div>
     </section>
     <footer id="rodape">
         <p>&copy; Bianka Almeida</p>
-        <a href="https://linkedin.com/in/bianka-almeida/" target="_blank">Linkedln</a>
+        <a href="https://linkedin.com/in/bianka-almeida/" target="_blank"><img src="imagens/linkedin.png" alt="icone linkedin"></a>
     </footer>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
 </body>
 </html>
